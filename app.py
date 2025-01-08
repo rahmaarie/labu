@@ -14,18 +14,18 @@ def app():
     st.header('Enter the features for the pumpkin seed classification:')
     
     # Input fields for pumpkin seed features
-    area = st.number_input('Area', min_value=0.0)
-    perimeter = st.number_input('Perimeter', min_value=0.0)
-    major_axis_length = st.number_input('Major Axis Length', min_value=0.0)
-    minor_axis_length = st.number_input('Minor Axis Length', min_value=0.0)
-    convex_area = st.number_input('Convex Area', min_value=0.0)
-    equiv_diameter = st.number_input('Equivalent Diameter', min_value=0.0)
-    eccentricity = st.number_input('Eccentricity', min_value=0.0, max_value=1.0)
-    solidity = st.number_input('Solidity', min_value=0.0, max_value=1.0)
-    extent = st.number_input('Extent', min_value=0.0, max_value=1.0)
-    roundness = st.number_input('Roundness', min_value=0.0)
-    aspect_ratio = st.number_input('Aspect Ratio', min_value=0.0)
-    compactness = st.number_input('Compactness', min_value=0.0)
+    area = st.slider('Area', min_value=0.0)
+    perimeter = st.slider('Perimeter', min_value=0.0)
+    major_axis_length = st.slider('Major Axis Length', min_value=0.0)
+    minor_axis_length = st.slider('Minor Axis Length', min_value=0.0)
+    convex_area = st.slider('Convex Area', min_value=0.0)
+    equiv_diameter = st.slider('Equivalent Diameter', min_value=0.0)
+    eccentricity = st.slider('Eccentricity', min_value=0.0, max_value=1.0)
+    solidity = st.slider('Solidity', min_value=0.0, max_value=1.0)
+    extent = st.slider('Extent', min_value=0.0, max_value=1.0)
+    roundness = st.slider('Roundness', min_value=0.0)
+    aspect_ratio = st.slider('Aspect Ratio', min_value=0.0)
+    compactness = st.slider('Compactness', min_value=0.0)
     
     # When the user presses the predict button
     if st.button('Predict'):
